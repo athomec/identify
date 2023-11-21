@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic-alert" transform="translate(-592 -202)">
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="12" cy="12" r="12" transform="translate(592 202)" fill="#fff"/>
+    <path id="exclamation-circle-fill" d="M24,12A12,12,0,1,1,12,0,12,12,0,0,1,24,12ZM12,6a1.358,1.358,0,0,0-1.35,1.493l.525,5.261a.828.828,0,0,0,1.65,0l.525-5.261A1.358,1.358,0,0,0,12,6Zm0,9a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,12,15Z" transform="translate(592 202)" fill="#ff7f57"/>
+  </g>
+</svg>

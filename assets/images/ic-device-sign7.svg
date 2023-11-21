@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic-device-sign7" transform="translate(-6456 -3182)">
+    <g id="Group_353" data-name="Group 353" transform="translate(5945 2615.845)">
+      <g id="Path_413" data-name="Path 413" transform="translate(513 569.155)" fill="#fff">
+        <path d="M 19 17 L 1 17 L 1 1 L 19 1 L 19 17 Z" stroke="none"/>
+        <path d="M 2 2 L 2 16 L 18 16 L 18 2 L 2 2 M 0 0 L 20 0 L 20 18 L 0 18 L 0 0 Z" stroke="none" fill="#ff7f57"/>
+      </g>
+      <path id="Path_414" data-name="Path 414" d="M7265.018,3234.666v15.378" transform="translate(-6745 -2664)" fill="none" stroke="#ff7f57" stroke-width="2"/>
+      <path id="Path_415" data-name="Path 415" d="M7265.018,3234.666v15.378" transform="translate(-6739 -2664)" fill="none" stroke="#ff7f57" stroke-width="2"/>
+    </g>
+    <rect id="Rectangle_264" data-name="Rectangle 264" width="24" height="24" transform="translate(6456 3182)" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="ic-save" transform="translate(-1279 232)">
+    <g id="move_to_inbox_black_24dp" transform="translate(1282 -229)">
+      <path id="Path_129" data-name="Path 129" d="M0,0H34.154V34.154H0Z" fill="none"/>
+      <path id="Path_130" data-name="Path 130" d="M21.5,11.539H17.871V7.269H13.744v4.269H10.115l5.692,5.692ZM25.769,3H5.832A2.833,2.833,0,0,0,3,5.846V25.769a2.833,2.833,0,0,0,2.832,2.846H25.769a2.855,2.855,0,0,0,2.846-2.846V5.846A2.855,2.855,0,0,0,25.769,3Zm0,22.769H5.846V21.5h5.066a5.658,5.658,0,0,0,9.819,0h5.038Zm0-7.115h-7.1a2.846,2.846,0,1,1-5.692,0H5.846L5.832,5.846H25.769Z" transform="translate(1.269 1.269)" fill="#c1bfbf"/>
+    </g>
+    <rect id="Rectangle_264" data-name="Rectangle 264" width="40" height="40" transform="translate(1279 -232)" fill="none"/>
+  </g>
+</svg>

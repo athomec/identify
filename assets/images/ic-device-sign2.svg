@@ -1,0 +1,7 @@
+<svg id="ic-device-sign2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Path_407" data-name="Path 407" d="M0,0H24V24H0Z" fill="none"/>
+  <g id="Group_326" data-name="Group 326" transform="translate(0.901 0.901)">
+    <path id="Path_409" data-name="Path 409" d="M20.839,11.1H20.38a9.181,9.181,0,1,1-18.362,0,9.181,9.181,0,1,1,18.362,0H21.3A10.1,10.1,0,1,0,11.2,21.2,10.07,10.07,0,0,0,21.3,11.1Z" fill="#ff9100" stroke="#ff9100" stroke-width="0.5"/>
+  </g>
+  <text id="G" transform="translate(6 17)" fill="#ff9100" font-size="15" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">G</tspan></text>
+</svg>

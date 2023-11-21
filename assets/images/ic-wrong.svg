@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic-wrong" transform="translate(-1458 378)">
+    <path id="exclamation-circle-fill" d="M20,10A10,10,0,1,1,10,0,10,10,0,0,1,20,10ZM10,5A1.131,1.131,0,0,0,8.875,6.244l.438,4.384a.69.69,0,0,0,1.375,0l.438-4.384A1.131,1.131,0,0,0,10,5Zm0,7.5a1.25,1.25,0,1,0,1.25,1.25A1.25,1.25,0,0,0,10,12.5Z" transform="translate(1460 -376)" fill="#ee362f"/>
+    <rect id="Rectangle_266" data-name="Rectangle 266" width="24" height="24" transform="translate(1458 -378)" fill="none"/>
+  </g>
+</svg>

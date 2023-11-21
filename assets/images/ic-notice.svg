@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="ic-notice" transform="translate(-877 233)">
+    <path id="notification_important_black_24dp" d="M14.086,32.353a3.147,3.147,0,1,0,6.294,0ZM17.233,8.616a7.91,7.91,0,0,1,7.907,7.907v11.07H9.326V16.523A7.91,7.91,0,0,1,17.233,8.616Zm0-7.116A2.369,2.369,0,0,0,14.86,3.872v1.85a11.059,11.059,0,0,0-8.7,10.8v9.488L3,29.174v1.581H31.465V29.174L28.3,26.012V16.523a11.059,11.059,0,0,0-8.7-10.8V3.872A2.369,2.369,0,0,0,17.233,1.5ZM15.651,11.779h3.163V18.1H15.651Zm0,9.488h3.163V24.43H15.651Z" transform="translate(880 -231.5)" fill="#c1bfbf"/>
+    <rect id="Rectangle_262" data-name="Rectangle 262" width="40" height="40" transform="translate(877 -233)" fill="none"/>
+  </g>
+</svg>

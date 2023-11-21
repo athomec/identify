@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <title>危害辨識卡製備 SOP</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="環境部化學物質管理署,危害辨識卡,製備SOP,化學物質管理署">
+    <meta name="description" content="環境部化學物質管理署 - 危害辨識卡製備 SOP" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta property="og:site_name" content="image.png" />
+    <meta property="og:image" content="assets/images/link-img.png" />
+    <!--分享設定-->
+    <link rel="icon" href="assets/images/favicon.png" type="image/ico" />
+    <!--iconfont設定-->
+    <link rel="stylesheet" href="assets/style/all.css">
+    <!--css設定-->
+</head>
+
+	<body>
+		<!--頁面開始-->
+		<div class="wrapper">
+			<!--主選單開始-->
+<header>
+    <nav class="navbar fixed-top js-nav py-0">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" title="危害辨識卡製備 SOP">
+                <h1 class="navbar-title mb-0 fs-3 fw-bold">
+                    危害辨識卡<span class="fs-4 ms-3">製備SOP</span>
+                </h1>
+            </a>
+            <div class="navbar-side py-2">
+                <img src="./assets/images/logo.svg" alt="環境部化學物質管理署" class="ms-auto">
+            </div>
+        </div>
+    </nav>
+</header>
+<!--主選單結束-->
+				<!--新增視窗開始-->
+<div class="modal fade" id="add-chemical" tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5"><img src="./assets/images/ic-add-primary.svg" class="me-2">新增化學品資訊</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body py-4">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-5">
+							<div class="row gx-2 align-items-start flex-nowrap mb-5">
+								<div class="col-auto">
+									<label for="chemical_name" class="col-form-label text-end" style="width: 114px;">
+										<span class="text-danger">*</span>
+										化學品名稱
+									</label>
+								</div>
+								<div class="col-auto flex-shrink-1">
+									<input type="text" id="chemical_name" class="form-control" value="化學品名稱化學品名稱">
+								</div>
+								<div class="col-auto h-100">
+									<img src="./assets/images/ic-ok.svg" alt="正確" class="ms-auto mt-2">
+								</div>
+							</div>
+							<div class="row gx-2 align-items-start flex-nowrap mb-5">
+								<div class="col-auto">
+									<label for="locate" class="col-form-label">
+										<span class="text-danger">*</span>使用/存放地點</label>
+								</div>
+								<div class="col-auto flex-shrink-1">
+									<input type="text" id="locate" class="form-control" value="2樓實驗室">
+								</div>
+								<div class="col-auto">
+									<img src="./assets/images/ic-ok.svg" alt="正確" class="ms-auto mt-2">
+								</div>
+							</div>
+							<div class="row gx-2 align-items-start flex-nowrap mb-5">
+								<div class="col-auto">
+									<label for="UNNo" class="col-form-label text-end mb-0" style="width: 114px;">
+										<span class="text-danger">*</span> UN.No
+									</label>
+								</div>
+								<div class="col-auto flex-shrink-1">
+									<input type="text" id="UNNo" class="form-control" value="2樓實驗室">
+								</div>
+								<div class="col-auto">
+									<img src="./assets/images/ic-ok.svg" alt="正確" class="ms-auto mt-2">
+								</div>
+							</div>
+						</div>
+						<div class="col-7">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-7">
+										<div class="row gx-2 align-items-start flex-nowrap mb-5">
+											<div class="col-auto">
+												<label for="use" class="col-form-label"><span
+														class="text-danger">*</span> 包裝方式</label>
+											</div>
+											<div class="col-auto">
+												<ul class="form-btn-group" role="tablist" data-notice="alert">
+													<li>
+														<button class="btn form-btn-group-item fs-8"
+															data-bs-toggle="pill">桶裝</button>
+													</li>
+													<li>
+														<button class="btn form-btn-group-item"
+															data-bs-toggle="pill">袋</button>
+													</li>
+													<li>
+														<button class="btn form-btn-group-item"
+															data-bs-toggle="pill">槽</button>
+													</li>
+												</ul>
+												<p class="mt-1 d-flex align-items-center text-alert fs-7">
+													<img src="./assets/images/ic-no-select.svg" class="me-1 mt-1">尚未選擇包裝方式
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-5">
+										<div class="row gx-2 align-items-start flex-nowrap mb-5">
+											<div class="col-auto">
+												<label class="col-form-label"><span
+														class="text-danger">*</span> 材質</label>
+											</div>
+											<div class="col-auto">
+												<ul class="form-btn-group" role="tablist">
+													<li>
+														<button class="btn form-btn-group-item active"
+															data-bs-toggle="pill">鋼</button>
+													</li>
+													<li>
+														<button class="btn form-btn-group-item fs-8"
+															data-bs-toggle="pill">玻璃</button>
+													</li>
+													<li>
+														<button class="btn form-btn-group-item"
+															data-bs-toggle="pill">塑</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-7">
+										<div class="row gx-2 align-items-start flex-nowrap mb-5">
+											<div class="col-auto">
+												<label for="amount" class="col-form-label text-end mb-0" style="width: 78px;">
+													<span class="text-danger">*</span> 儲存量
+												</label>
+											</div>
+											<div class="col-auto flex-shrink-1">
+												<input type="text" id="amount" class="form-control" value="55000kg">
+											</div>
+											<div class="col-auto">
+												<img src="./assets/images/ic-ok.svg" alt="正確" class="ms-auto mt-2">
+											</div>
+										</div>
+									</div>
+									<div class="col-5">
+										<div class="row gx-2 align-items-start flex-nowrap mb-5">
+											<div class="col-auto">
+												<label class="col-form-label"><span class="text-danger">*</span> 樣態</label>
+											</div>
+											<div class="col-auto">
+												<ul class="form-btn-group" role="tablist">
+													<li>
+														<button class="btn form-btn-group-item active fs-8" data-bs-toggle="pill">固體</button>
+													</li>
+													<li>
+														<button class="btn form-btn-group-item" data-bs-toggle="pill">液</button>
+													</li>
+													<li>
+														<button class="btn form-btn-group-item" data-bs-toggle="pill">氣</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="row gx-2 align-items-start flex-nowrap mb-5">
+											<div class="col-auto">
+												<label for="use" class="col-form-label"><span class="text-danger">*</span>
+													危害特性</label>
+											</div>
+											<div class="col-auto">
+												<ul class="element-list p-1" data-style="select">
+													<li>
+														<div class="element-list-item js-toggle-btn active" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="急毒">毒
+														</div>
+													</li>
+													<li>
+														<div class="element-list-item js-toggle-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="急毒">禁</div>
+													</li>
+													<li>
+														<div class="element-list-item js-toggle-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="急毒">爆</div>
+													</li>
+													<li>
+														<div class="element-list-item js-toggle-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="急毒">燃</div>
+													</li>
+													<li>
+														<div class="element-list-item js-toggle-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="急毒">壓</div>
+													</li>
+													<li>
+														<div class="element-list-item js-toggle-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="急毒">射</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-btn-group col-12 d-flex">
+							<button type="button" class="btn btn-md btn-base-dark ms-auto me-3 text-white" data-bs-dismiss="modal">關閉</button>
+							<button type="button" class="btn btn-md btn-highlight-dark me-3 text-white" data-bs-dismiss="modal">刪除</button>
+							<button type="button" class="btn btn-md btn-primary text-white" data-bs-dismiss="modal">儲存</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--內容區塊開始-->
+<main class="main container">
+	<ul class="step-card row mb-4">
+		<li class="col">
+			<a href="index.html" class="step-card-link done">
+				<div class="step-card-img mb-2">
+					<img src="./assets/images/ic-factory.svg">
+				</div>
+				<p class="step-card-title">工廠資訊</p>
+			</a>
+		</li>
+		<li class="col">
+			<a href="chemical.html" class="step-card-link active">
+				<div class="step-card-img mb-2">
+					<img src="./assets/images/ic-chemical.svg">
+				</div>
+				<p class="step-card-title">化學物質</p>
+			</a>
+		</li>
+		<li class="col">
+			<a href="others.html" class="step-card-link">
+				<div class="step-card-img mb-2">
+					<img src="./assets/images/ic-notice.svg">
+				</div>
+				<p class="step-card-title">其他危害</p>
+			</a>
+		</li>
+		<li class="col">
+			<a href="floor.html" class="step-card-link">
+				<div class="step-card-img mb-2">
+					<img src="./assets/images/ic-floor.svg">
+				</div>
+				<p class="step-card-title">樓層分布</p>
+			</a>
+		</li>
+		<li class="col">
+			<a href="save.html" class="step-card-link">
+				<div class="step-card-img mb-2">
+					<img src="./assets/images/ic-save.svg">
+				</div>
+				<p class="step-card-title">輸出保存</p>
+			</a>
+		</li>
+	</ul>
+	<div class="inner">
+		<div class="inner-header pt-4 pb-3 pe-4">
+			<div class="inner-tag"><img src="./assets/images/ic-factory.svg"></div>
+			<h2 class="inner-title mb-0">化學品資訊<span>包含工廠內製造、使用、貯存化學品資訊</span></h2>
+			<p class="ms-auto text-base-dark me-2">2023.05.20 更新</p>
+			<button class="btn btn-sm btn-secondary text-white" data-bs-toggle="modal" data-bs-target="#add-chemical">
+				<img src="./assets/images/ic-add.svg" class="me-1">新增
+			</button>
+		</div>
+		<div class="inner-body p-4">
+			<div class="container-fluid">
+				<div class="scrollbar mb-4" style="height: 350px;">
+					<table class="table table-borderless">
+						<thead>
+							<tr>
+								<th scope="col">化學品名稱</th>
+								<th scope="col">包裝/材質</th>
+								<th scope="col">使用/存放地點</th>
+								<th scope="col">儲存量</th>
+								<th scope="col">樣態</th>
+								<th scope="col">UN.No</th>
+								<th scope="col" width="200">危害特性</th>
+								<th scope="col" width="50"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row">甲苯Toluene</td>
+								<td>C/P</td>
+								<td>2樓實驗室</td>
+								<td>5000kg</td>
+								<td>液</td>
+								<td>123456</td>
+								<td>
+									<ul class="element-list">
+										<li>
+											<div class="element-list-item active" data-bs-toggle="tooltip"
+												data-bs-placement="top" data-bs-title="急毒">毒</div>
+										</li>
+										<li>
+											<div class="element-list-item">禁</div>
+										</li>
+										<li>
+											<div class="element-list-item">爆</div>
+										</li>
+										<li>
+											<div class="element-list-item">燃</div>
+										</li>
+										<li>
+											<div class="element-list-item">壓</div>
+										</li>
+										<li>
+											<div class="element-list-item">射</div>
+										</li>
+									</ul>
+								</td>
+								<td><a href="#" class="table-link"><img src="./assets/images/ic-edit.svg" alt="編輯"></a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">甲苯Toluene</td>
+								<td>C/P</td>
+								<td>2樓實驗室</td>
+								<td>5000kg</td>
+								<td>液</td>
+								<td>123456</td>
+								<td>
+									<ul class="element-list">
+										<li>
+											<div class="element-list-item active" data-bs-toggle="tooltip"
+												data-bs-placement="top" data-bs-title="急毒">毒</div>
+										</li>
+										<li>
+											<div class="element-list-item">禁</div>
+										</li>
+										<li>
+											<div class="element-list-item">爆</div>
+										</li>
+										<li>
+											<div class="element-list-item">燃</div>
+										</li>
+										<li>
+											<div class="element-list-item">壓</div>
+										</li>
+										<li>
+											<div class="element-list-item">射</div>
+										</li>
+									</ul>
+								</td>
+								<td><a href="#" class="table-link"><img src="./assets/images/ic-edit.svg" alt="編輯"></a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">甲苯Toluene</td>
+								<td>C/P</td>
+								<td>2樓實驗室</td>
+								<td>5000kg</td>
+								<td>液</td>
+								<td>123456</td>
+								<td>
+									<ul class="element-list">
+										<li>
+											<div class="element-list-item active" data-bs-toggle="tooltip"
+												data-bs-placement="top" data-bs-title="急毒">毒</div>
+										</li>
+										<li>
+											<div class="element-list-item">禁</div>
+										</li>
+										<li>
+											<div class="element-list-item">爆</div>
+										</li>
+										<li>
+											<div class="element-list-item">燃</div>
+										</li>
+										<li>
+											<div class="element-list-item">壓</div>
+										</li>
+										<li>
+											<div class="element-list-item">射</div>
+										</li>
+									</ul>
+								</td>
+								<td><a href="#" class="table-link"><img src="./assets/images/ic-edit.svg" alt="編輯"></a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">甲苯Toluene</td>
+								<td>C/P</td>
+								<td>2樓實驗室</td>
+								<td>5000kg</td>
+								<td>液</td>
+								<td>123456</td>
+								<td>
+									<ul class="element-list">
+										<li>
+											<div class="element-list-item active" data-bs-toggle="tooltip"
+												data-bs-placement="top" data-bs-title="急毒">毒</div>
+										</li>
+										<li>
+											<div class="element-list-item">禁</div>
+										</li>
+										<li>
+											<div class="element-list-item">爆</div>
+										</li>
+										<li>
+											<div class="element-list-item">燃</div>
+										</li>
+										<li>
+											<div class="element-list-item">壓</div>
+										</li>
+										<li>
+											<div class="element-list-item">射</div>
+										</li>
+									</ul>
+								</td>
+								<td><a href="#" class="table-link"><img src="./assets/images/ic-edit.svg" alt="編輯"></a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">甲苯Toluene</td>
+								<td>C/P</td>
+								<td>2樓實驗室</td>
+								<td>5000kg</td>
+								<td>液</td>
+								<td>123456</td>
+								<td>
+									<ul class="element-list">
+										<li>
+											<div class="element-list-item active" data-bs-toggle="tooltip"
+												data-bs-placement="top" data-bs-title="急毒">毒</div>
+										</li>
+										<li>
+											<div class="element-list-item">禁</div>
+										</li>
+										<li>
+											<div class="element-list-item">爆</div>
+										</li>
+										<li>
+											<div class="element-list-item">燃</div>
+										</li>
+										<li>
+											<div class="element-list-item">壓</div>
+										</li>
+										<li>
+											<div class="element-list-item">射</div>
+										</li>
+									</ul>
+								</td>
+								<td><a href="#" class="table-link"><img src="./assets/images/ic-edit.svg" alt="編輯"></a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">甲苯Toluene</td>
+								<td>C/P</td>
+								<td>2樓實驗室</td>
+								<td>5000kg</td>
+								<td>液</td>
+								<td>123456</td>
+								<td>
+									<ul class="element-list">
+										<li>
+											<div class="element-list-item active" data-bs-toggle="tooltip"
+												data-bs-placement="top" data-bs-title="急毒">毒</div>
+										</li>
+										<li>
+											<div class="element-list-item">禁</div>
+										</li>
+										<li>
+											<div class="element-list-item">爆</div>
+										</li>
+										<li>
+											<div class="element-list-item">燃</div>
+										</li>
+										<li>
+											<div class="element-list-item">壓</div>
+										</li>
+										<li>
+											<div class="element-list-item">射</div>
+										</li>
+									</ul>
+								</td>
+								<td><a href="#" class="table-link"><img src="./assets/images/ic-edit.svg" alt="編輯"></a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">甲苯Toluene</td>
+								<td>C/P</td>
+								<td>2樓實驗室</td>
+								<td>5000kg</td>
+								<td>液</td>
+								<td>123456</td>
+								<td>
+									<ul class="element-list">
+										<li>
+											<div class="element-list-item active" data-bs-toggle="tooltip"
+												data-bs-placement="top" data-bs-title="急毒">毒</div>
+										</li>
+										<li>
+											<div class="element-list-item">禁</div>
+										</li>
+										<li>
+											<div class="element-list-item">爆</div>
+										</li>
+										<li>
+											<div class="element-list-item">燃</div>
+										</li>
+										<li>
+											<div class="element-list-item">壓</div>
+										</li>
+										<li>
+											<div class="element-list-item">射</div>
+										</li>
+									</ul>
+								</td>
+								<td><a href="#" class="table-link"><img src="./assets/images/ic-edit.svg" alt="編輯"></a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">甲苯Toluene</td>
+								<td>C/P</td>
+								<td>2樓實驗室</td>
+								<td>5000kg</td>
+								<td>液</td>
+								<td>123456</td>
+								<td>
+									<ul class="element-list">
+										<li>
+											<div class="element-list-item active" data-bs-toggle="tooltip"
+												data-bs-placement="top" data-bs-title="急毒">毒</div>
+										</li>
+										<li>
+											<div class="element-list-item">禁</div>
+										</li>
+										<li>
+											<div class="element-list-item">爆</div>
+										</li>
+										<li>
+											<div class="element-list-item">燃</div>
+										</li>
+										<li>
+											<div class="element-list-item">壓</div>
+										</li>
+										<li>
+											<div class="element-list-item">射</div>
+										</li>
+									</ul>
+								</td>
+								<td><a href="#" class="table-link"><img src="./assets/images/ic-edit.svg" alt="編輯"></a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">甲苯Toluene</td>
+								<td>C/P</td>
+								<td>2樓實驗室</td>
+								<td>5000kg</td>
+								<td>液</td>
+								<td>123456</td>
+								<td>
+									<ul class="element-list">
+										<li>
+											<div class="element-list-item active" data-bs-toggle="tooltip"
+												data-bs-placement="top" data-bs-title="急毒">毒</div>
+										</li>
+										<li>
+											<div class="element-list-item">禁</div>
+										</li>
+										<li>
+											<div class="element-list-item">爆</div>
+										</li>
+										<li>
+											<div class="element-list-item">燃</div>
+										</li>
+										<li>
+											<div class="element-list-item">壓</div>
+										</li>
+										<li>
+											<div class="element-list-item">射</div>
+										</li>
+									</ul>
+								</td>
+								<td><a href="#" class="table-link"><img src="./assets/images/ic-edit.svg" alt="編輯"></a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">甲苯Toluene</td>
+								<td>C/P</td>
+								<td>2樓實驗室</td>
+								<td>5000kg</td>
+								<td>液</td>
+								<td>123456</td>
+								<td>
+									<ul class="element-list">
+										<li>
+											<div class="element-list-item active" data-bs-toggle="tooltip"
+												data-bs-placement="top" data-bs-title="急毒">毒</div>
+										</li>
+										<li>
+											<div class="element-list-item">禁</div>
+										</li>
+										<li>
+											<div class="element-list-item">爆</div>
+										</li>
+										<li>
+											<div class="element-list-item">燃</div>
+										</li>
+										<li>
+											<div class="element-list-item">壓</div>
+										</li>
+										<li>
+											<div class="element-list-item">射</div>
+										</li>
+									</ul>
+								</td>
+								<td><a href="#" class="table-link"><img src="./assets/images/ic-edit.svg" alt="編輯"></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="d-flex">
+					<a href="#" class="btn btn-md btn-base-dark ms-auto me-3 text-white px-6"
+						onclick="location.href='index.html'">上一步</a>
+					<a href="#" class="btn btn-md btn-primary text-white px-6"
+						onclick="location.href='others.html'">下一步</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+		</div>
+		<!-- SCRIPTS -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src='assets/js/jquery-ui.min.js'></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/moment-with-locales.min.js"></script>
+<script src="assets/js/tempusdominus-bootstrap-4.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/index.global.js"></script><!--行事曆-->
+<script src="assets/js/script.js"></script><!--自訂-->
+<script>
+    $(function () {
+        //tooltip開啟
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        //預約輪播
+        RESIZE();
+
+        function RESIZE() {
+            WINDOWH = $(window).height();
+            WINDOW = $(window).width();
+            if (WINDOW < 769) {
+               $('.js-link-card-list').slick({
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    rows: 3,
+                    dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                rows: 1,
+                                dots: true
+                            }
+                        }
+                    ]
+                });
+            }
+        }
+
+        $(window).resize(function () {
+            RESIZE();
+        })
+
+        //下拉輸入選單
+        $('.js-input-select').select2();
+
+        //時間表單
+        var datetimepickerOptions = {
+            locale: 'zh-tw',
+            defaultDate: new Date(),
+            format: 'L',
+            icons: {
+                time: "bi bi-clock",
+                date: "bi bi-calendar",
+                up: "bi bi-arrow-up",
+                down: "bi bi-arrow-down",
+                previous: "bi bi-chevron-left",
+                next: "bi bi-chevron-right",
+                today: "bi bi-clock",
+                clear: "bi bi-trash3"
+            }
+        };
+        $('#time-start').datetimepicker(datetimepickerOptions);
+        $('#time-end').datetimepicker(datetimepickerOptions);
+        //時間範圍表單
+        var datetimepickerRange = {
+            locale: 'zh-tw',
+            //defaultDate: new Date(),
+            format: 'L',
+            allowMultidate: true,
+            multidateSeparator: '~',
+            icons: {
+                time: "bi bi-clock",
+                date: "bi bi-calendar",
+                up: "bi bi-arrow-up",
+                down: "bi bi-arrow-down",
+                previous: "bi bi-chevron-left",
+                next: "bi bi-chevron-right",
+                today: "bi bi-clock",
+                clear: "bi bi-trash3"
+            }
+        };
+        $('#time-range').datetimepicker(datetimepickerRange);
+        $('#time-range1').datetimepicker(datetimepickerRange);
+
+        var today1 = moment(); // 第一個今天的日期
+        var today2 = moment(); // 第二個今天的日期
+
+    });
+</script>
+	</body>
+
+</html>
